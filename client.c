@@ -34,7 +34,7 @@ int main() {
             return 1;
       }
 
-      sleep(2);
+      sleep(1);
       for (p = servinfo; p != NULL; p = p->ai_next) {
             if ((sockfd = socket(p->ai_family, p->ai_socktype, p->ai_protocol)) == -1) {
                   perror("client: socket");
@@ -60,6 +60,7 @@ int main() {
             perror("client: recv");
             exit(1);
       }
+      free(rec_data);
 
       // printf("%d\n", numbytes);
       // printf("Thread num: %i\n", rec_data->thread_num);

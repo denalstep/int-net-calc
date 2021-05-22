@@ -71,7 +71,3 @@ char* get_serv_addr() {
         // printf("%lu, %s", sizeof(fin_addr_str), fin_addr_str);
         return fin_addr_str;
 }
-
-// int main() {
-//     get_serv_addr();
-// }
