@@ -26,7 +26,7 @@ void* thread_socket(void* arg) {
       struct pollfd pfds;
       pfds.fd = data->socket;
       pfds.events = POLLIN;
-      int num_events = poll(&pfds, 1, 5000);
+      int num_events = poll(&pfds, 1, POLL_TIME);
       if (num_events == 0) {
             printf("server: poll timed out\n");
       }

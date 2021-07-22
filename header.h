@@ -19,5 +19,7 @@
 #define SERVERPORTU "3229"
 #define SERVERPORT "3228"
 
-#define BACKLOG 1
-#define NUM_OF_DOTS 10000
+#define POLL_TIME 60000
+
+#define BACKLOG 3
+#define NUM_OF_DOTS 10000000
